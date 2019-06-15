@@ -1,6 +1,6 @@
 <ul class="todo-list">
   <app-todo-item
     [todo]="todo"
-    *ngFor="let todo of todos; let i = index"
+    *ngFor="let todo of todos | filterTodo: filter"
   ></app-todo-item>
 </ul>
